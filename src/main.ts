@@ -7,7 +7,7 @@ async function bootstrap() {
   const app = await NestFactory.create<NestExpressApplication>(AppModule);
 
   app.enableCors({
-    origin: 'http://localhost:4200',
+    origin: 'https://ristoranteclassicosalernitano.it',
     credentials: true,
     exposedHeaders: ['total', 'total_pages']
   });
